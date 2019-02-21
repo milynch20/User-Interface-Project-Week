@@ -179,7 +179,7 @@ html {
   font-size: 6.4rem;
 }
 .main-content {
-  max-width: 1000px;
+  max-width: 1200px;
   width: 100%;
 }
 .top-content {
@@ -255,6 +255,9 @@ html {
   left: 72px;
   font-weight: 300;
   color: #222;
+}
+.project .mobile-img {
+  display: none;
 }
 .project-content {
   max-width: 500px;
@@ -375,5 +378,24 @@ footer .copyright {
     max-width: 500px;
     width: 100%;
     font-size: 1.6rem;
+  }
+  .project-header {
+    display: none;
+  }
+  .project .mobile-img {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+  }
+  .project h3 {
+    width: 90%;
+    right: 5%;
+    bottom: -20%;
+    left: 5%;
+    text-align: center;
+  }
+  .project .header-img {
+    max-width: 500px;
+    width: 100%;
   }
 }

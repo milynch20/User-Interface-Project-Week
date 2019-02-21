@@ -115,7 +115,7 @@ html {
 }
 
 .main-content {
-  max-width: 1000px;
+  max-width: 1200px;
   width: 100%;
 }
 
@@ -212,6 +212,10 @@ html {
       font-weight: 300;
       color: #222;
     }
+  }
+
+  .mobile-img {
+    display: none;
   }
 
   &-content {
@@ -375,9 +379,30 @@ footer {
 
   .project {
     &-header {
-      
+      display: none;
+    }
+
+    .mobile-img {
+      display: block;
+      max-width: 500px;
+      width: 100%;
+     }
+
+     h3 {
+      width: 90%;
+      right: 5%;
+      bottom: -20%;
+      left: 5%;
+      text-align: center;
+    }
+
+    .header-img {
+      max-width: 500px;
+      width: 100%;
     }
   }
+
+  
   
    
 }
