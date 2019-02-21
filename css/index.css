@@ -376,12 +376,4 @@ footer .copyright {
     width: 100%;
     font-size: 1.6rem;
   }
-  .project-header {
-    max-width: 500px;
-    width: 100%;
-    background: url("file:///Users/malcolmlynch/Desktop/Lambda-School/User-Interface-Project-Week/img/home/home-mobile-img-1.png ");
-    text-indent: -9999px;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 }
