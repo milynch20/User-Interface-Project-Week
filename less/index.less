@@ -33,6 +33,7 @@ footer,header,hgroup,menu,nav,section{
 }
 body{
   line-height:1;
+  border: 1px solid black;
 }
 ol,ul{
   list-style:none;
@@ -58,3 +59,330 @@ table{
 }
 
 /* Your Code Goes Here */
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1025px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navigation {
+  background-color: #99A5AF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 70px;
+
+  span {
+    font-size: 1.8rem;
+    color: white;
+  }
+
+  .dropdown-content {
+    display: none;
+  }
+}
+
+.jumbotron {
+ display: flex;
+ align-items: flex-end;
+ font-weight: bold;
+
+ line-height: 75px;
+ color: white;
+ border-width: 2px 10px 4px 20px;
+ height: 60vh;
+ width: 100%;
+ background-image: url("../img/home/home-jumbotron.png");
+ background-repeat: no-repeat;
+ background-size: cover;
+
+
+
+ h1{
+   margin-left: 60px;
+   margin-bottom: 40px;
+   font-size: 6.4rem;
+ }
+  
+}
+
+.main-content {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.top-content {
+  display: flex;
+  justify-content: center;
+  padding: 40px 25px;
+}
+
+.inverse-content {
+  display: flex;
+  justify-content: center;
+  padding: 40px 25px;
+}
+
+.text-content {
+  Font-Family: Roboto, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 24px;
+  padding-top: 30px;
+  margin: 10px;
+  align-items: center;
+  width: 48%;
+
+  h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  button {
+    border: 1px solid #222;
+    padding: 15px 25px;
+    width: 120px;
+
+    font-size: 1rem;
+    
+  }
+  
+}
+
+.img-content {
+  width: 48%;
+}
+
+.recent-projects {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  //max-width: 1000px;
+
+  h2 {
+    font-size: 3rem;
+    margin: 20px 33px;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: 2.8rem;
+  }
+
+}
+
+.project {
+  &-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+    width: 100%;
+    
+
+    h3 {
+      color: Black;
+      position: absolute;
+      display: inline-block;
+      padding: 20px 30px;
+      background-color: #D8D8D8;
+      bottom: -13px;
+      font-family: Roboto, Arial, sans-serif;
+    }
+
+    .right-detail {
+      right: 72px;
+      font-weight: 300;
+    }
+
+    .left-detail {
+      left: 72px;
+      font-weight: 300;
+      color: #222;
+    }
+  }
+
+  &-content {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 75px 0;
+
+    > p {
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 1.6rem;
+      line-height: 24px;
+
+    }
+
+    p:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+footer {
+  background: #828282;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 40px 0;
+  }
+
+  // .search-bar {
+  //   margin: 40px 0;
+  // }
+
+  .form-input {
+    padding: 10px;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .state-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   // padding: 10px 15px;
+    align-self: stretch;
+  }
+
+  p {
+    line-height: 0.2rem;
+    display: block;
+  }
+
+  
+  form {
+    margin: 20px 0;
+  }
+
+
+.copyright {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+}
+
+
+
+// MOBILE
+@mobile: ~"(max-width: 500px)";
+@media @mobile {
+  .jumbotron {
+    display: flex;
+    align-items: flex-end;
+    font-weight: bold;
+  
+    line-height: 75px;
+    color: white;
+    border-width: 2px 10px 4px 20px;
+    height: 40vh;
+    width: 100%;
+    background-image: url("../img/home/home-mobile-jumbotron.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1{
+      margin-left: 20px;
+      margin-bottom: 20px;
+      font-size: 6.4rem;
+    }
+  }
+
+  .top-content {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px 20px;
+   
+
+    .img-content{
+      max-width: 500px;
+      width: 100%;
+      background: url("file:///Users/malcolmlynch/Desktop/Lambda-School/User-Interface-Project-Week/img/home/home-mobile-img-1.png ");
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+
+  }
+
+  .inverse-content {
+    display: flex;
+    flex-direction: column;
+
+    .img-content{
+      max-width: 500px;
+      width: 100%;
+      background: url("file:///Users/malcolmlynch/Desktop/Lambda-School/User-Interface-Project-Week/img/home/home-mobile-img-2.png ");
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+  }
+
+  .text-content {
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+    
+
+    h2 {
+      font-size: 2.4rem;
+      max-width: 500px;
+      width: 100%;
+      text-align: left;
+    }
+
+    p {
+      text-align: left;
+    }
+
+    button {
+      border: 1.5px solid #222;
+      padding: 15px 25px;
+      max-width: 500px;
+      width: 100%;
+  
+      font-size: 1.6rem;
+      
+    }
+  }
+
+  .project-header {
+    max-width: 500px;
+    width: 100%;
+    background: url("file:///Users/malcolmlynch/Desktop/Lambda-School/User-Interface-Project-Week/img/home/home-mobile-img-1.png ");
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+   
+}
