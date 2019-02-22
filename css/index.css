@@ -1,3 +1,6 @@
+html {
+  font-family: Roboto, Arial, sans-serif;
+}
 .services-jumbotron {
   display: flex;
   align-items: flex-end;
@@ -24,27 +27,68 @@
   border: 2px solid blue;
   display: flex;
   justify-content: space-evenly;
-  line-height: 1.5;
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 1.1rem;
+  line-height: 2;
+  font-size: 1.2rem;
   font-weight: 450;
   margin: 20px 0;
 }
 .services-container .tabs-section {
   border: 2px solid pink;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .services-container .tabs-section .tabs {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+.services-container .tabs-section .tabs .tabs-link {
+  border: 1px solid black;
+  padding: 12px 25px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+.services-container .tabs-section .tabs .tabs-link:hover {
+  background-color: #D3D3D3;
+  color: #FFF;
+}
+.services-container .tabs-section .tabs .tabs-link-selected {
+  background-attachment: #5E9FB9;
 }
 .services-container .service-tabs {
   border: 2px solid purple;
 }
-.services-container .service-tabs .tabs-items {
+.services-container .service-tabs .tabs-item {
   display: flex;
   flex-direction: row;
+}
+.services-container .service-tabs .tabs-item .services-content {
+  border: 2px solid orange;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.services-container .service-tabs .tabs-item .services-content h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.services-container .service-tabs .tabs-item .services-img {
+  border: 2px solid lime;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding-top: 30px;
+  padding-left: 15px;
+}
+.tabs-link[data-tab='3'] {
+  background-color: #5E9FB9;
+  color: white;
 }
 /*------------------------------------*\
 RESET
@@ -201,13 +245,65 @@ html {
   flex-direction: row;
   justify-content: space-between;
   padding: 10px 70px;
+  align-items: center;
 }
 .navigation span {
-  font-size: 1.8rem;
-  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #ffffff;
 }
-.navigation .dropdown-content {
+.navigation .menu-close {
   display: none;
+}
+@media (max-width: 500px) {
+  .navigation {
+    max-width: 500px;
+  }
+}
+.dropdown a:hover,
+.dropdown a:focus {
+  color: #504545;
+}
+.menu-close {
+  position: absolute;
+  top: 0.8%;
+  right: 5.3%;
+  font-size: 6rem;
+  z-index: 2;
+}
+@media (max-width: 500px) {
+  .menu-close {
+    right: 7.5%;
+  }
+}
+.dropdown {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(153, 165, 174, 0.8);
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+}
+.dropdown a {
+  font-weight: bold;
+  padding: 0.8rem;
+  text-decoration: none;
+  font-size: 3.6rem;
+  color: white;
+  display: block;
+  /* Display block instead of inline */
+  transition: 0.3s;
+}
+.dropdown-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
 }
 .jumbotron {
   display: flex;
@@ -266,6 +362,7 @@ html {
 }
 .img-content {
   width: 48%;
+  overflow: hidden;
 }
 .recent-projects {
   display: flex;
@@ -286,6 +383,7 @@ html {
   justify-content: center;
   max-width: 1100px;
   width: 100%;
+  overflow: hidden;
 }
 .project-header h3 {
   color: Black;

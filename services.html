@@ -12,18 +12,22 @@
 
 <body>
 	<!-- Top Menu Content -->
+	
 	<section class="navigation">
 			<span>S&J</span>
 
-			<div class="dropdown">
-				<img class="dropbtn" src="img/nav-hamburger.png" alt="hamburger">
+			<div class="dropdown">	
 				<div class="dropdown-content">
-					<a href="">Home</a>
-					<a href="">Services</a>
-					<a href="">Contact</a>
-				</div>
+					<a class="menu-buttons" href="file:///Users/malcolmlynch/Desktop/Lambda-School/User-Interface-Project-Week/index.html">Home</a>
+					<a class="menu-buttons" href="file:///Users/malcolmlynch/Desktop/Lambda-School/User-Interface-Project-Week/services.html">Services</a>
+					<a class="menu-buttons" href="/contact.html">Contact</a>
+				</div>		
 			</div>
+
+			<img class="menu-expand" onclick="openNav()" src="img/nav-hamburger.png" alt="menu-expand">
+			<img class="menu-close" onclick="closeNav()" src="img/nav-hamburger-close.png" alt="menu-close">
 		</section>
+	
 	<!-- Top Menu Content -->
 		
 		
@@ -58,9 +62,9 @@
 		
 
 			<section class="service-tabs">
-				<section class="tabs-items">		
+				
 						<div class="tabs-item tabs-item-selected" data-tab="1">
-							<div class="content">
+							<div class="services-content">
 								<h2>Pre-Construction</h2>
 								<p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate
 									 one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service 
@@ -68,58 +72,61 @@
 									 web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" 
 									 thinking. Completely pursue scalable customer service through sustainable potentialities.</p>
 							</div>
+
+								<div class="services-img">
+										<img class="img" img src="img/services/services-tab-pre-construction-img.png">
+								</div>
 							</div>
 
-							<div class="service-img">
-								<img class="img" img src="img/services/services-tab-pre-construction-img.png">
-							</div>
-				</section>
 
-
-	<!-- 
-				<section class="tabs-items">		
-						<div class="tabs-item tabs-item-selected" data-tab="2">
-							<div class="content">
-								<h2>Construction</h2>
-								<p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</br></br>Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.</p>
-							</div>
-							</div>
-
-							<div class="service-img">
-								<img class="img" img src="img/services/services-tab-construction-img.png">
-							</div>
-				</section>
-
-
-
-				<section class="tabs-items">		
-						<div class="tabs-item tabs-item-selected" data-tab="3">
-							<div class="content">
-								<h2>Design Build</h2>
-								<p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</br></br>Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.</p>
-							</div>
+							<div class="tabs-item" data-tab="2">
+								<div class="services-content">
+									<h2>Construction</h2>
+									<p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate
+											one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service 
+											for state of the art customer service.</br></br>Phosfluorescently engage worldwide methodologies with 
+											web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" 
+											thinking. Completely pursue scalable customer service through sustainable potentialities.</p>
+								</div>
+	
+									<div class="services-img">
+											<img class="img" img src="img/services/services-tab-construction-img.png">
+									</div>
 							</div>
 
-							<div class="service-img">
-								<img class="img" img src="img/services/services-tab-design-build-img.png">
+
+							<div class="tabs-item" data-tab="3">
+								<div class="services-content">
+									<h2>Design Build</h2>
+									<p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate
+											one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service 
+											for state of the art customer service.</br></br>Phosfluorescently engage worldwide methodologies with 
+											web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" 
+											thinking. Completely pursue scalable customer service through sustainable potentialities.</p>
+								</div>
+	
+									<div class="services-img">
+											<img class="img" img src="img/services/services-tab-design-build-img.png">
+									</div>
 							</div>
-				</section>
 
 
-
-				<section class="tabs-items">		
-						<div class="tabs-item tabs-item-selected" data-tab="4">
-							<div class="content">
-								<h2>Sustainability</h2>
-								<p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</br></br>Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.</p>
+							<div class="tabs-item" data-tab="4">
+								<div class="services-content">
+									<h2>Sustainability</h2>
+									<p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate
+											one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service 
+											for state of the art customer service.</br></br>Phosfluorescently engage worldwide methodologies with 
+											web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" 
+											thinking. Completely pursue scalable customer service through sustainable potentialities.</p>
+								</div>
+	
+									<div class="services-img">
+											<img class="img" img src="img/services/services-tab-sustainability-img.png">
+									</div>
 							</div>
-							</div>
 
-							<div class="service-img">
-								<img class="img" img src="img/services/services-tab-sustainability-img.png">
-							</div>
-				</section> -->
-
+		
 			</section>
 		</section>
 
