@@ -1,3 +1,51 @@
+.services-jumbotron {
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
+  line-height: 75px;
+  color: white;
+  border-width: 2px 10px 4px 20px;
+  height: 30vh;
+  width: 100%;
+  background-image: url("file:///Users/malcolmlynch/Desktop/Lambda-School/User-Interface-Project-Week/img/services/services-jumbotron.png ");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.services-jumbotron h1 {
+  margin-left: 60px;
+  margin-bottom: 40px;
+  font-size: 6.4rem;
+}
+.services-container {
+  border: 2px solid red;
+  padding: 10px 50px 50px;
+}
+.services-container .top-paragraph {
+  border: 2px solid blue;
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 1.5;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 450;
+  margin: 20px 0;
+}
+.services-container .tabs-section {
+  border: 2px solid pink;
+  margin-bottom: 20px;
+}
+.services-container .tabs-section .tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.services-container .service-tabs {
+  border: 2px solid purple;
+}
+.services-container .service-tabs .tabs-items {
+  display: flex;
+  flex-direction: row;
+}
 /*------------------------------------*\
 RESET
 \*------------------------------------*/
@@ -279,7 +327,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 20px;
 }
 footer .contact {
   display: flex;
