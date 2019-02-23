@@ -78,6 +78,9 @@ html {
   padding-top: 30px;
   padding-left: 15px;
 }
+.tabs-link-selected {
+  background-color: #5E9FB9;
+}
 /*------------------------------------*\
 RESET
 \*------------------------------------*/
