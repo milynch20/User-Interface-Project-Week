@@ -20,11 +20,9 @@ html {
   font-size: 6.4rem;
 }
 .services-container {
-  border: 2px solid red;
   padding: 10px 50px 50px;
 }
 .services-container .top-paragraph {
-  border: 2px solid blue;
   display: flex;
   justify-content: space-evenly;
   line-height: 2;
@@ -33,7 +31,6 @@ html {
   margin: 20px 0;
 }
 .services-container .tabs-section {
-  border: 2px solid pink;
   margin-bottom: 40px;
 }
 .services-container .tabs-section .tabs {
@@ -57,15 +54,11 @@ html {
 .services-container .tabs-section .tabs .tabs-link-selected {
   background-attachment: #5E9FB9;
 }
-.services-container .service-tabs {
-  border: 2px solid purple;
-}
 .services-container .service-tabs .tabs-item {
   display: flex;
   flex-direction: row;
 }
 .services-container .service-tabs .tabs-item .services-content {
-  border: 2px solid orange;
   line-height: 1.5;
   font-size: 1.2rem;
   width: 50%;
@@ -79,16 +72,11 @@ html {
   margin-bottom: 10px;
 }
 .services-container .service-tabs .tabs-item .services-img {
-  border: 2px solid lime;
   max-width: 100%;
   height: auto;
   overflow: hidden;
   padding-top: 30px;
   padding-left: 15px;
-}
-.tabs-link[data-tab='3'] {
-  background-color: #5E9FB9;
-  color: white;
 }
 /*------------------------------------*\
 RESET
